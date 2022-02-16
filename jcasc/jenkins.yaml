@@ -43,6 +43,15 @@ unclassified:
   headerLabel:
     text: "${GITHUB_APP}-bundle-v2"
 credentials:
+  restrictedSystem:
+    domainCredentials:
+    - allowList: "controller-jobs/controller-provision/**/main"
+      credentials:
+        string:
+          description: "CasC Workshop Controller Provision Secret"
+          id: "casc-workshop-controller-provision-secret"
+          scope: GLOBAL
+          secret: "${cbciCascWorkshopControllerProvisionSecret}"
   system:
     domainCredentials:
     - credentials:
@@ -63,12 +72,3 @@ credentials:
           id: "cloudbees-ci-casc-workshop-github-app"
           owner: "${GITHUB_ORGANIZATION}"
           privateKey: "${cbciCascWorkshopGitHubAppPrivateKey}"
-  restrictedSystem:
-    domainCredentials:
-    - allowList: "controller-jobs/controller-provision/**/main"
-      credentials:
-        string:
-          description: "CasC Workshop Controller Provision Secret"
-          id: "casc-workshop-controller-provision-secret"
-          scope: GLOBAL
-          secret: "${cbciCascWorkshopControllerProvisionSecret}"
