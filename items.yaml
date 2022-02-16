@@ -76,7 +76,7 @@ items:
         daysToKeep: -1
         numToKeep: -1
     kind: organizationFolder
-    displayName: controller-casc-update
+    displayName: controller-provision
     name: controller-provision
     navigators:
     - github:
