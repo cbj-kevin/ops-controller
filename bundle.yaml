@@ -1,5 +1,5 @@
 apiVersion: "1"
-version: "5"
+version: "6"
 id: "cbj-kevin-ops-controller"
 description: "CloudBees CI configuration bundle for the cbj-kevin ops-controller Controller"
 availabilityPattern: "cloudbees-ci-casc-workshop/cbj-kevin/ops-controller"
